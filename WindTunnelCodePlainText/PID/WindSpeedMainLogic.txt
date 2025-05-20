@@ -1,0 +1,44 @@
+/******************************************************************************
+ * Name: WindSpeedMainLogic
+ * Description: Wind Speed Logic for different task states.
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+IF HMI_EMERGENCY_ESTOP OR HMI_ACKNOWLEDGE_BTN OR HMI_STOP OR PanelButtonStop THEN
+	HMIVFDInput := 0;
+	posError := 0;
+	preError := 0;
+	integralError := 0;
+	derivativeError := 0;
+	HMI_MANUAL_TOGGLE := 0;
+	HMI_WINDSPEED_SLIDER := 0;
+
+
+ELSIF HMI_MANUAL_TOGGLE THEN
+	posError := 0;
+	preError := 0;
+	integralError := 0;
+	derivativeError := 0;
+
+ELSIF CurrentState = 1 THEN
+	JSR(WindSpeed);
+
+	posError := HMI_Desired_WindSpeed - HMI_Actual_WindSpeed;
+	integralError := integralError + posError;
+	derivativeError := posError - preError;
+	preError := posError;
+	HMIVFDInput := HMI_KPOSITION * posError + HMI_KINTEGRAL * integralError + HMI_KDERIVATIVE * derivativeError;
+
+ELSE
+	HMIVFDInput := 0;
+	posError := 0;
+	integralError := 0;
+	derivativeError := 0;
+	preError := 0;
+END_IF;
+

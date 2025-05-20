@@ -1,0 +1,12 @@
+/******************************************************************************
+ * Name: MainRoutine
+ * Description: Main routine to call other routines
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+JSR(WindTunnelMainLogic);

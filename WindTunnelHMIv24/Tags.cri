@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Tags.HMI_EXTRACTUSB" TargetProperty="Action" Source="WindTunnelData" Event="ValueChange" Action="Database Export" Param="" />
+      </Items>
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Tags.HMI_START" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_STOP" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_EMERGENCY_ESTOP" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_DATAVIEWER" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_EXTRACTUSB" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_ACKNOWLEDGE_BTN" TargetProperty="Action" Event="ValueChange" Action="Multi Action" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items />
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Tags" TargetProperty="HMIVFDInput" Source="Controller1.DataItem3" />
+        <Item Target="Tags" TargetProperty="HMI_START" Source="Controller1.DataItem5" />
+        <Item Target="Tags" TargetProperty="HMI_STOP" Source="Controller1.DataItem1" />
+        <Item Target="Tags" TargetProperty="HMI_WindVelocity" Source="Controller1.DataItem2" />
+        <Item Target="Tags" TargetProperty="HMI_DRAG" Source="Controller1.DataItem4" />
+        <Item Target="Tags" TargetProperty="HMI_LIFT" Source="Controller1.DataItem6" />
+        <Item Target="Tags" TargetProperty="HMI_Pressure" Source="Controller1.DataItem7" />
+        <Item Target="Tags" TargetProperty="HMI_WindSpeed_Graph_Max_Range" Source="Controller1.DataItem18" />
+        <Item Target="Tags" TargetProperty="HMI_Forces_Graph_TimeSpan" Source="Controller1.DataItem20" />
+        <Item Target="Tags" TargetProperty="HMI_EMERGENCY_ESTOP" Source="Controller1.DataItem10" />
+        <Item Target="Tags" TargetProperty="HMI_DATAVIEWER" Source="Controller1.DataItem13" />
+        <Item Target="Tags" TargetProperty="HMI_EXTRACTUSB" Source="Controller1.DataItem8" />
+        <Item Target="Tags" TargetProperty="HMI_ACKNOWLEDGE_BTN" Source="Controller1.DataItem9" />
+        <Item Target="Tags" TargetProperty="HMI_Desired_WindSpeed" Source="Controller1.DataItem15" />
+        <Item Target="Tags" TargetProperty="HMI_Actual_WindSpeed" Source="Controller1.DataItem14" />
+        <Item Target="Tags" TargetProperty="HMI_WindSpeed_Epsilon" Source="Controller1.DataItem16" />
+        <Item Target="Tags" TargetProperty="HMI_Forces_Graph_Max_Range" Source="Controller1.DataItem17" />
+        <Item Target="Tags" TargetProperty="HMI_WindSpeed_Graph_TimeSpan" Source="Controller1.DataItem19" />
+        <Item Target="Tags" TargetProperty="HMI_WindSpeedToggle" Source="Controller1.DataItem21" />
+        <Item Target="Tags" TargetProperty="HMI_KDERIVATIVE" Source="Controller1.DataItem22" />
+        <Item Target="Tags" TargetProperty="HMI_KINTEGRAL" Source="Controller1.DataItem23" />
+        <Item Target="Tags" TargetProperty="HMI_KPOSITION" Source="Controller1.DataItem24" />
+        <Item Target="Tags" TargetProperty="HMI_MANUAL_TOGGLE" Source="Controller1.DataItem11" />
+        <Item Target="Tags" TargetProperty="HMI_WINDSPEED_SLIDER" Source="Controller1.DataItem12" />
+      </Items>
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items />
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="PollGroups">
+          <Details>
+            <Detail>
+              <Key>Group1</Key>
+              <Value>500</Value>
+            </Detail>
+            <Detail>
+              <Key>Group2</Key>
+              <Value>500</Value>
+            </Detail>
+            <Detail>
+              <Key>Group3</Key>
+              <Value>500</Value>
+            </Detail>
+            <Detail>
+              <Key>Group4</Key>
+              <Value>500</Value>
+            </Detail>
+            <Detail>
+              <Key>Group5</Key>
+              <Value>500</Value>
+            </Detail>
+          </Details>
+        </Item>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="DataExchange">
+          <Details>
+            <Detail>
+              <Key>DataExchangeTags</Key>
+              <Value>0</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Tags.HMI_EMERGENCY_ESTOP" TargetProperty="Action" Source="emergency_popup" Event="ValueChange" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_DATAVIEWER" TargetProperty="Action" Source="Data_Live_Viewer" Event="ValueChange" Action="Show Screen" Param="" />
+        <Item xsi:type="ActionItem" Target="Tags.HMI_ACKNOWLEDGE_BTN" TargetProperty="Action" Source="Data_Live_Viewer" Event="ValueChange" Action="Show Screen" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

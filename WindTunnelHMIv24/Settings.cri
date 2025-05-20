@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings.Button" TargetProperty="Actions" Event="Click" Action="Set Date and Time" />
+        <Item xsi:type="ActionItem" Target="Settings.Button2" TargetProperty="Actions" Event="Click" Action="Set Time Zone, Region and Daylight Saving" />
+        <Item xsi:type="ActionItem" Target="Settings.Button3" TargetProperty="Actions" Event="Click" Action="Show Backlight Settings" />
+        <Item xsi:type="ActionItem" Target="Settings.Button1" TargetProperty="Actions" Event="Click" Action="Show IP Settings" />
+        <Item xsi:type="ActionItem" Target="Settings.Button4" TargetProperty="Actions" Event="Click" Action="Show Screen" />
+        <Item xsi:type="ActionItem" Target="Settings.Button5" TargetProperty="Actions" Event="Click" Action="Show Users Dialog" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Settings.Text4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button2" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text2" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text3" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text5" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text6" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button3" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Button5" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric2" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric3" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text7" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text8" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric5" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.Text9" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Settings.AnalogNumeric6" TargetProperty="FontFamily" Source="Tahoma" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Settings.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_WindSpeed_Graph_TimeSpan" />
+        <Item Target="Settings.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_WindSpeed_Graph_Max_Range" />
+        <Item Target="Settings.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_Forces_Graph_Max_Range" />
+        <Item Target="Settings.AnalogNumeric3" TargetProperty="Value" Source="Tags.HMI_Forces_Graph_TimeSpan" />
+        <Item Target="Settings.AnalogNumeric4" TargetProperty="Value" Source="Tags.HMI_KPOSITION" />
+        <Item Target="Settings.AnalogNumeric5" TargetProperty="Value" Source="Tags.HMI_KINTEGRAL" />
+        <Item Target="Settings.AnalogNumeric6" TargetProperty="Value" Source="Tags.HMI_KDERIVATIVE" />
+      </Items>
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items>
+        <Item xsi:type="LegacyItemMetadata" ScreenName="Settings" ItemName="LegacyScreenObjects">
+          <Details />
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="ScreenObjects" ScreenName="Settings" TemplateScreen="Background">
+          <Details>
+            <Detail>
+              <Key>Label</Key>
+              <Value>10</Value>
+            </Detail>
+            <Detail>
+              <Key>Button</Key>
+              <Value>6</Value>
+            </Detail>
+            <Detail>
+              <Key>AnalogNumericFX</Key>
+              <Value>7</Value>
+            </Detail>
+            <Detail>
+              <Key>Rectangle</Key>
+              <Value>3</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Settings.Button4" TargetProperty="Actions" Source="Manual_Adjustments" Event="Click" Action="Show Screen" Param="Default" />
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>26</ObjectsCount>
+          <ScreenName>Settings</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Settings</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+    <Category Name="WebBrowserSecurity">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

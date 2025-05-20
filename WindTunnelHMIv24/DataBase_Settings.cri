@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items>
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button6" TargetProperty="Actions" Source="WindTunnelData" Event="Click" Action="Stop Logging." Param="" />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button8" TargetProperty="Actions" Source="WindTunnelData" Event="Click" Action="Start Logging." Param="" />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button7" TargetProperty="Actions" Source="WindTunnelData" Event="Click" Action="Clear Datalogger" Param="" />
+      </Items>
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button6" TargetProperty="Actions" Event="Click" Action="Stop Logging." />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button8" TargetProperty="Actions" Event="Click" Action="Start Logging." />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button" TargetProperty="Actions" Event="Click" Action="Restore Databases" />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button1" TargetProperty="Actions" Event="Click" Action="Back Up Databases" />
+        <Item xsi:type="ActionItem" Target="DataBase_Settings.Button7" TargetProperty="Actions" Event="Click" Action="Clear Datalogger" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="DataBase_Settings.Button6" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text12" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Button8" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text13" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Button" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Button1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text11" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Button7" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="DataBase_Settings.Text4" TargetProperty="FontFamily" Source="Tahoma" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items />
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items>
+        <Item xsi:type="LegacyItemMetadata" ScreenName="DataBase_Settings" ItemName="LegacyScreenObjects">
+          <Details />
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="ScreenObjects" ScreenName="DataBase_Settings" TemplateScreen="Background">
+          <Details>
+            <Detail>
+              <Key>Button</Key>
+              <Value>5</Value>
+            </Detail>
+            <Detail>
+              <Key>Label</Key>
+              <Value>6</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>11</ObjectsCount>
+          <ScreenName>DataBase_Settings</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>DataBase_Settings</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+    <Category Name="WebBrowserSecurity">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

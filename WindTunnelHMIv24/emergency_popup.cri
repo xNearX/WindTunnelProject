@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="emergency_popup.Button" TargetProperty="Actions" Event="Click" Action="Close Screen" />
+        <Item xsi:type="ActionItem" Target="emergency_popup.Button" TargetProperty="Actions" Event="MouseDown" Action="Set Tag" />
+        <Item xsi:type="ActionItem" Target="emergency_popup.Button" TargetProperty="Actions" Event="MouseUp" Action="Reset Tag" />
+        <Item xsi:type="ActionItem" Target="emergency_popup.Button" TargetProperty="Actions" Event="MouseLeave" Action="Reset Tag" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="emergency_popup.Text" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="emergency_popup.Button" TargetProperty="FontFamily" Source="Tahoma" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="emergency_popup.Button" TargetProperty="Value" Source="Tags.HMI_ACKNOWLEDGE_BTN" />
+        <Item Target="emergency_popup.Button" TargetProperty="EnabledProperties.EnabledDynamicsValue" Source="Tags.HMI_EMERGENCY_ESTOP" />
+      </Items>
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items>
+        <Item xsi:type="LegacyItemMetadata" ScreenName="emergency_popup" ItemName="LegacyScreenObjects">
+          <Details />
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="ScreenObjects" ScreenName="emergency_popup">
+          <Details>
+            <Detail>
+              <Key>Picture</Key>
+              <Value>1</Value>
+            </Detail>
+            <Detail>
+              <Key>Label</Key>
+              <Value>1</Value>
+            </Detail>
+            <Detail>
+              <Key>Button</Key>
+              <Value>1</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items />
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>3</ObjectsCount>
+          <ScreenName>emergency_popup</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>emergency_popup</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="emergency_popup.Picture" Source="emergency" Width="95" Height="115" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+    <Category Name="WebBrowserSecurity">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

@@ -1,0 +1,93 @@
+/******************************************************************************
+ * Name: WindTunnelMainLogic
+ * Description: Wind Tunnel State Machine
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+IF S:FS THEN
+	CurrentState := 0;
+	NextState := 0;
+	HMI_Desired_WindSpeed := 9.00;
+	HMI_Forces_Graph_Max_Range := 5;
+	HMI_WindSpeed_Graph_Max_Range := 650;
+	HMI_KPOSITION := 600.0;
+	HMI_KINTEGRAL := 1.0; 
+	HMI_KDERIVATIVE := 0.0;
+END_IF;
+
+IF DataViewScreenButton AND NOT HMI_EMERGENCY_ESTOP AND NOT HMI_ACKNOWLEDGE_BTN THEN
+	HMI_DATAVIEWER := 1;
+ELSE
+	HMI_DATAVIEWER := 0;
+END_IF;
+
+IF USBExtractionButton AND NOT HMI_EMERGENCY_ESTOP AND NOT HMI_ACKNOWLEDGE_BTN THEN
+	HMI_EXTRACTUSB := 1;
+	
+ELSE
+	HMI_EXTRACTUSB := 0;
+END_IF;
+
+IF HMI_EMERGENCY_ESTOP THEN
+	HMIVFDInput := 0;
+	ToggleLight := 1;
+	NextState := 100;
+ELSE
+	ToggleLight := 0;
+END_IF;
+
+
+IF CurrentState <> NextState THEN
+	CurrentState := NextState;
+END_IF;
+
+CASE CurrentState OF
+
+	0: /* INIT State */
+		IF HMI_START OR PanelButtonStart THEN
+			NextState := 1;
+			HMIVFDInput := 0;
+		END_IF;
+
+	1: /* ON State */
+		jsr(PressureSensor);
+		jsr(LiftSensor);
+		jsr(DragSensor);
+
+
+	  	IF HMI_STOP OR PanelButtonStop THEN
+			HMIVFDInput := 0;
+	  		NextState := 0;
+	  	END_IF;
+
+		IF HMI_MANUAL_TOGGLE THEN
+			HMIVFDInput := HMI_WINDSPEED_SLIDER;
+		ELSE
+			IF HMI_WindSpeedToggle THEN
+				IF HMI_Desired_WindSpeed < 9.00 THEN
+					HMI_Desired_WindSpeed := 9.00;
+				ELSIF HMI_Desired_WindSpeed > 30.00 THEN
+					HMI_Desired_WindSpeed := 30.00;
+				END_IF;
+			ELSE
+				HMI_Desired_WindSpeed := (30.00 - 9.00) / (10561 - 4) *  WindSpeedDial + 9.0;
+			END_IF;
+		END_IF;
+
+	100:
+		IF NOT HMI_EMERGENCY_ESTOP AND HMI_ACKNOWLEDGE_BTN THEN
+			NextState := 0;
+			ToggleLight := 0;
+		END_IF;
+
+END_CASE;
+
+
+
+
+

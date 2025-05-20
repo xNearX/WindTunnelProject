@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TrendDataSources>
+  <TrendViewer Name="Data_Live_Viewer.TrendViewer1" TimeRangeBoundDataItem="Tags.HMI_Forces_Graph_TimeSpan" TrendWidth="366" TimeRange="PT0S">
+    <GlobalDataItems>
+      <GlobalDataItem DataSourceName="Tags.HMI_DRAG" />
+      <GlobalDataItem DataSourceName="Tags.HMI_LIFT" />
+    </GlobalDataItems>
+  </TrendViewer>
+  <TrendViewer Name="Data_Live_Viewer.TrendViewer" TimeRangeBoundDataItem="Tags.HMI_WindSpeed_Graph_TimeSpan" TrendWidth="364" TimeRange="PT0S">
+    <GlobalDataItems>
+      <GlobalDataItem DataSourceName="Tags.HMI_Actual_WindSpeed" />
+      <GlobalDataItem DataSourceName="Tags.HMI_Pressure" />
+    </GlobalDataItems>
+  </TrendViewer>
+</TrendDataSources>

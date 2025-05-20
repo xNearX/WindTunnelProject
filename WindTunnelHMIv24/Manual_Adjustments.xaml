@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.52.81.0' LastConverterVersion='2.52.8'?>
+<nacs:ScreenWindow Topmost="False" Title="Manual_Adjustments" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 600" PopupScreen="False" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="600" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nacxs="clr-namespace:Neo.ApplicationFramework.Common.Xaml.Serializer;assembly=Common" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" x:Class="Neo.ApplicationFramework.Generated.Manual_Adjustments">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Background" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="600" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:Button Text="START" RequiresTransparency="True" SymbolTransparent="False" Background="#FF90EE90" FontSize="24" Name="m_Button" Width="162" Height="102" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="157" Canvas.Top="437" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_START].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Value>
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Set Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="SetTag" ObjectName="" EventName="PreviewMouseDown" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="" EventName="PreviewMouseUp" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="" EventName="MouseLeave" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nacc1:Slider Maximum="10000" Minimum="0" MajorTickCount="11" MinorTickCount="5" FontSize="19" Width="897" Height="171" IndicatorMargin="71.6803333333334,34.4333333333333,71.6803333333334,9.5" RequiresTransparency="True" ForceTransparency="False" FontFamily="Tahoma" Name="m_Slider" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="52" Canvas.Top="192" Style="{nac1:StyleMarkupExtension Black}">
+      <nacc1:Slider.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nacc1:Slider.Resources>
+      <nacc1:Slider.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_WINDSPEED_SLIDER].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacc1:Slider.Value>
+    </nacc1:Slider>
+    <nac:Button Text="STOP" RequiresTransparency="True" SymbolTransparent="False" Background="#FFFF0000" FontSize="24" Name="m_Button1" Width="180" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="724" Canvas.Top="438" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_STOP].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Value>
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Set Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="SetTag" ObjectName="" EventName="PreviewMouseDown" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="" EventName="PreviewMouseUp" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+          <nata:Action Name="Reset Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ResetTag" ObjectName="" EventName="MouseLeave" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+      <nai:ScriptProperties.ScriptEvents>
+        <nai:ScriptEventList>
+          <nacxs:EventHandlerInfo EventName="MouseDown" MethodName="Button1_MouseDown" />
+          <nacxs:EventHandlerInfo EventName="MouseEnter" MethodName="Button1_MouseEnter" />
+          <nacxs:EventHandlerInfo EventName="MouseLeave" MethodName="Button1_MouseLeave" />
+        </nai:ScriptEventList>
+      </nai:ScriptProperties.ScriptEvents>
+    </nac:Button>
+    <nac:Label Text="Manual Adjustments" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="32" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="8,0,8,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="301" Canvas.Top="9">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Wind-Speed" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="32" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="8,0,8,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="422" Canvas.Top="138">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Button Text="Manual Override" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button2" Width="274" Height="84" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="386" Canvas.Top="446" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.Resources>
+        <ResourceDictionary>
+          <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+            <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+              <nacd2:BrushCFIntervalMapper>
+                <nacd2:BrushCFIntervalMapper.Intervals>
+                  <nacd2:BrushCFIntervalList>
+                    <nacd2:BrushCFInterval>
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="237, 28, 36" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                    <nacd2:BrushCFInterval Start="1" End="1">
+                      <nacd2:BrushCFInterval.Value>
+                        <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                      </nacd2:BrushCFInterval.Value>
+                    </nacd2:BrushCFInterval>
+                  </nacd2:BrushCFIntervalList>
+                </nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalMapper.DefaultValue>
+                  <nacgl:BrushCF StartColor="White" EndColor="212, 208, 200" FillDirection="VerticalTopToBottom" />
+                </nacd2:BrushCFIntervalMapper.DefaultValue>
+              </nacd2:BrushCFIntervalMapper>
+            </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+          </nacd1:BrushDynamicsConverter>
+          <nacc:VariantValueConverter x:Key="ValueConverter" />
+        </ResourceDictionary>
+      </nac:Button.Resources>
+      <nac:Button.Value>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MANUAL_TOGGLE].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Double>0</s:Double>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Value>
+      <nac:Button.Background>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.HMI_MANUAL_TOGGLE].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FFFFFFFF" Offset="0" />
+                  <GradientStop Color="#FFD4D0C8" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Binding.FallbackValue>
+        </Binding>
+      </nac:Button.Background>
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Toggle Tag">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="ToggleTag" ObjectName="" EventName="Click" ReferenceType="ThisTag" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button" TargetProperty="Actions" Event="Click" Action="Trend Viewer History" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button1" TargetProperty="Actions" Event="Click" Action="Trend Viewer History" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button5" TargetProperty="Actions" Event="Click" Action="Show Trend Viewer Legend" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button4" TargetProperty="Actions" Event="Click" Action="Show Trend Viewer Legend" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button3" TargetProperty="Actions" Event="Click" Action="Trend Viewer History" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button2" TargetProperty="Actions" Event="Click" Action="Trend Viewer History" />
+        <Item xsi:type="ActionItem" Target="Data_Live_Viewer.Button6" TargetProperty="Actions" Event="Click" Action="Toggle Tag" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Data_Live_Viewer.AnalogNumeric1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric2" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric3" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Text4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Text1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric7" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.TrendViewer1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button5" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.TrendViewer" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button3" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button2" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Text" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Button6" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Data_Live_Viewer.Text2" TargetProperty="FontFamily" Source="Tahoma" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Data_Live_Viewer.AnalogNumeric1" TargetProperty="Value" Source="Tags.HMI_Pressure" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric2" TargetProperty="Value" Source="Tags.HMI_DRAG" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric3" TargetProperty="Value" Source="Tags.HMI_LIFT" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric7" TargetProperty="Value" Source="Tags.HMI_Actual_WindSpeed" />
+        <Item Target="Data_Live_Viewer.TrendViewer1" TargetProperty="ValueScaleMaximum" Source="Tags.HMI_Forces_Graph_Max_Range" />
+        <Item Target="Data_Live_Viewer.TrendViewer1" TargetProperty="TimeRange" Source="Tags.HMI_Forces_Graph_TimeSpan" />
+        <Item xsi:type="DecoratedItem" Target="Data_Live_Viewer.TrendViewer1.Drag" TargetProperty="DataSourceName" Source="Tags.HMI_DRAG" />
+        <Item xsi:type="DecoratedItem" Target="Data_Live_Viewer.TrendViewer1.Lift" TargetProperty="DataSourceName" Source="Tags.HMI_LIFT" />
+        <Item Target="Data_Live_Viewer.TrendViewer" TargetProperty="ValueScaleMaximum" Source="Tags.HMI_WindSpeed_Graph_Max_Range" />
+        <Item Target="Data_Live_Viewer.TrendViewer" TargetProperty="TimeRange" Source="Tags.HMI_WindSpeed_Graph_TimeSpan" />
+        <Item xsi:type="DecoratedItem" Target="Data_Live_Viewer.TrendViewer.Wind-Speed" TargetProperty="DataSourceName" Source="Tags.HMI_Actual_WindSpeed" />
+        <Item xsi:type="DecoratedItem" Target="Data_Live_Viewer.TrendViewer.Pressure" TargetProperty="DataSourceName" Source="Tags.HMI_Pressure" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric" TargetProperty="Value" Source="Tags.HMI_Desired_WindSpeed" />
+        <Item Target="Data_Live_Viewer.AnalogNumeric" TargetProperty="IsReadOnly" Source="Tags.HMI_WindSpeedToggle" />
+        <Item Target="Data_Live_Viewer.Button6" TargetProperty="Value" Source="Tags.HMI_WindSpeedToggle" />
+        <Item Target="Data_Live_Viewer.Button6" TargetProperty="TextValue" Source="Tags.HMI_WindSpeedToggle" />
+        <Item Target="Data_Live_Viewer.Button6" TargetProperty="Background" Source="Tags.HMI_WindSpeedToggle" />
+      </Items>
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items>
+        <Item xsi:type="LegacyItemMetadata" ScreenName="Data_Live_Viewer" ItemName="LegacyScreenObjects">
+          <Details />
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="ScreenObjects" ScreenName="Data_Live_Viewer" TemplateScreen="Background">
+          <Details>
+            <Detail>
+              <Key>AnalogNumericFX</Key>
+              <Value>5</Value>
+            </Detail>
+            <Detail>
+              <Key>Label</Key>
+              <Value>4</Value>
+            </Detail>
+            <Detail>
+              <Key>TrendViewer</Key>
+              <Value>2</Value>
+            </Detail>
+            <Detail>
+              <Key>Button</Key>
+              <Value>7</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="Data_Live_Viewer.TrendViewer1" Source="Data_Live_Viewer.m_TrendViewer1.bmp" />
+        <Item Target="Data_Live_Viewer.TrendViewer" Source="Data_Live_Viewer.m_TrendViewer.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>18</ObjectsCount>
+          <ScreenName>Data_Live_Viewer</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Data_Live_Viewer</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items>
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button" Source="player pause" Width="39" Height="39" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button1" Source="player play" Width="37" Height="37" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button5" Source="zoom in" Width="41" Height="41" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button4" Source="zoom in" Width="41" Height="41" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button3" Source="player play" Width="37" Height="37" IsAnimated="false" />
+        <Item xsi:type="SymbolItem" Target="Data_Live_Viewer.Button2" Source="player pause" Width="39" Height="39" IsAnimated="false" />
+      </Items>
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items>
+        <Item xsi:type="TrendViewerItem" Target="Data_Live_Viewer.TrendViewer1" TrendWidth="366" TimeRangeBoundDataItem="Tags.HMI_Forces_Graph_TimeSpan" TimeRange="PT0S">
+          <DataSourceNames>
+            <DataSourceName>Tags.HMI_DRAG</DataSourceName>
+            <DataSourceName>Tags.HMI_LIFT</DataSourceName>
+          </DataSourceNames>
+        </Item>
+        <Item xsi:type="TrendViewerItem" Target="Data_Live_Viewer.TrendViewer" TrendWidth="364" TimeRangeBoundDataItem="Tags.HMI_WindSpeed_Graph_TimeSpan" TimeRange="PT0S">
+          <DataSourceNames>
+            <DataSourceName>Tags.HMI_Actual_WindSpeed</DataSourceName>
+            <DataSourceName>Tags.HMI_Pressure</DataSourceName>
+          </DataSourceNames>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+    <Category Name="WebBrowserSecurity">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

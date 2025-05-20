@@ -1,0 +1,12 @@
+/******************************************************************************
+ * Name: WindSpeed
+ * Description: Wind Speed Calculation
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+HMI_Actual_WindSpeed [:=] sqrt((MULTIPLYBY2*(InputPressureSensor / MILLIVOLTSTOVOLTS * PRESSUREGAIN))/AIRDENSITY);

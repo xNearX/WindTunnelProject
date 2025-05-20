@@ -1,0 +1,12 @@
+/******************************************************************************
+ * Name: LiftSensor
+ * Description: Lift Sensor Calculation
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+HMI_Lift [:=] ((InputLiftSensor/ MILLIVOLTSTOVOLTS) / LIFTSENSITIVITY) * LIFTCAPACITY * GRAMFORCETONEWTONS;

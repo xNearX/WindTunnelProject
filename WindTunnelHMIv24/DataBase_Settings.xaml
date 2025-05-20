@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?neo version='2.52.81.0' LastConverterVersion='2.52.8'?>
+<nacs:ScreenWindow Topmost="False" Title="DataBase_Settings" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Normal" BorderStyle="ThreeDBorder" ScreenSize="1024, 600" StyleName="Default" IsCacheable="True" Background="{x:Null}" Width="1024" Height="600" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=Controls" xmlns:nacs1="clr-namespace:Neo.ApplicationFramework.Controls.Screen;assembly=ControlsCF" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:s="clr-namespace:System;assembly=mscorlib" x:Class="Neo.ApplicationFramework.Generated.DataBase_Settings">
+  <nacs:ScreenWindow.TemplateScreen>
+    <nacs1:TemplateScreen Name="Background" RenderMode="Background" />
+  </nacs:ScreenWindow.TemplateScreen>
+  <nacs:ElementCanvas Name="m_EditorCanvas" Width="1024" Height="600" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104">
+    <nac:Button Text="" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button6" Width="65" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="40" Canvas.Top="186" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Stop Logging.">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Stop" ObjectName="WindTunnelData" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Start Logging" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text12" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="119" Canvas.Top="114">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Button Text="" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button8" Width="65" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="3" Canvas.Left="40" Canvas.Top="109" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Start Logging.">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Start" ObjectName="WindTunnelData" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Stop Logging" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text13" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="4" Canvas.Left="123" Canvas.Top="191">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Button Text="" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button" Width="65" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="5" Canvas.Left="40" Canvas.Top="264" nai:SecurityProperties.SecurityGroupsRequired="Administrators" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Restore Databases">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="RestoreDatabases" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.Storage.IDatabaseRestoreService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" ParameterName="mainDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>True</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                    <nata:ActionParameterInfo Position="1" ParameterName="nonVolatileDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>False</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Backup to USB" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="6" Canvas.Left="123" Canvas.Top="339">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Button Text="" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button1" Width="65" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="40" Canvas.Top="341" nai:SecurityProperties.SecurityGroupsRequired="Administrators" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Back Up Databases">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="BackupDatabases" ObjectName="GetService&lt;Neo.ApplicationFramework.Interfaces.Storage.IDatabaseBackupService&gt;()" EventName="Click" ReferenceType="Service" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" ParameterName="mainDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>True</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                    <nata:ActionParameterInfo Position="1" ParameterName="auditTrail" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>False</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                    <nata:ActionParameterInfo Position="2" ParameterName="nonVolatileDatabase" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>False</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                    <nata:ActionParameterInfo Position="3" Value="UsbOrBrowse" ParameterName="target" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Restore Database" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text1" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="123" Canvas.Top="269">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Label Text="Clear Data" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="24" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="6,0,6,1" Name="m_Text11" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="123" Canvas.Top="424">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+    <nac:Button Text="" RequiresTransparency="True" SymbolTransparent="False" FontSize="24" Name="m_Button7" Width="65" Height="45" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="10" Canvas.Left="40" Canvas.Top="419" nai:SecurityProperties.SecurityGroupsRequired="Administrators, Operators" Style="{nac1:StyleMarkupExtension DefaultCF}">
+      <nac:Button.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Button.TextDecorations>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:Action Name="Clear Datalogger">
+            <nata:Action.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="Clear" ObjectName="WindTunnelData" EventName="Click" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                <nata:ActionMethodInfo.ActionParameterInfo>
+                  <nai:ActionParameterInfoList>
+                    <nata:ActionParameterInfo Position="0" ParameterName="showNotification" ParameterTypeString="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="">
+                      <nata:ActionParameterInfo.Value>
+                        <s:Boolean>True</s:Boolean>
+                      </nata:ActionParameterInfo.Value>
+                    </nata:ActionParameterInfo>
+                  </nai:ActionParameterInfoList>
+                </nata:ActionMethodInfo.ActionParameterInfo>
+              </nata:ActionMethodInfo>
+            </nata:Action.ActionMethodInfo>
+          </nata:Action>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+    </nac:Button>
+    <nac:Label Text="Database Settings" Background="#00FFFFFF" Foreground="#FF000000" FontFamily="Tahoma" FontSize="32" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="8,0,8,1" Name="m_Text4" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="11" Canvas.Left="306" Canvas.Top="9">
+      <nac:Label.TextDecorations>
+        <TextDecorationCollection />
+      </nac:Label.TextDecorations>
+    </nac:Label>
+  </nacs:ElementCanvas>
+</nacs:ScreenWindow>

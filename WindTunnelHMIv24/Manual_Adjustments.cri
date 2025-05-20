@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<CrossReferences xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="2.52.81.0">
+  <Categories>
+    <Category Name="AlarmViewer">
+      <Items />
+    </Category>
+    <Category Name="Alias">
+      <Items />
+    </Category>
+    <Category Name="AliasInstanceDataItem">
+      <Items />
+    </Category>
+    <Category Name="DatabaseService">
+      <Items />
+    </Category>
+    <Category Name="DatabaseViewer">
+      <Items />
+    </Category>
+    <Category Name="DataLogger">
+      <Items />
+    </Category>
+    <Category Name="Events">
+      <Items>
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button" TargetProperty="Actions" Event="MouseDown" Action="Set Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button" TargetProperty="Actions" Event="MouseUp" Action="Reset Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button" TargetProperty="Actions" Event="MouseLeave" Action="Reset Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button1" TargetProperty="Actions" Event="MouseDown" Action="Set Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button1" TargetProperty="Actions" Event="MouseUp" Action="Reset Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button1" TargetProperty="Actions" Event="MouseLeave" Action="Reset Tag" />
+        <Item xsi:type="ActionItem" Target="Manual_Adjustments.Button2" TargetProperty="Actions" Event="Click" Action="Toggle Tag" />
+      </Items>
+    </Category>
+    <Category Name="Expression">
+      <Items />
+    </Category>
+    <Category Name="Font">
+      <Items>
+        <Item Target="Manual_Adjustments.Button" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Manual_Adjustments.Slider" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Manual_Adjustments.Button1" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Manual_Adjustments.Text4" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Manual_Adjustments.Text" TargetProperty="FontFamily" Source="Tahoma" />
+        <Item Target="Manual_Adjustments.Button2" TargetProperty="FontFamily" Source="Tahoma" />
+      </Items>
+    </Category>
+    <Category Name="GlobalDataItem">
+      <Items>
+        <Item Target="Manual_Adjustments.Button" TargetProperty="Value" Source="Tags.HMI_START" />
+        <Item Target="Manual_Adjustments.Slider" TargetProperty="Value" Source="Tags.HMI_WINDSPEED_SLIDER" />
+        <Item Target="Manual_Adjustments.Button1" TargetProperty="Value" Source="Tags.HMI_STOP" />
+        <Item Target="Manual_Adjustments.Button2" TargetProperty="Value" Source="Tags.HMI_MANUAL_TOGGLE" />
+        <Item Target="Manual_Adjustments.Button2" TargetProperty="Background" Source="Tags.HMI_MANUAL_TOGGLE" />
+      </Items>
+    </Category>
+    <Category Name="InvalidAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyAction">
+      <Items />
+    </Category>
+    <Category Name="LegacyItems">
+      <Items>
+        <Item xsi:type="LegacyItemMetadata" ScreenName="Manual_Adjustments" ItemName="LegacyScreenObjects">
+          <Details />
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Metadata">
+      <Items>
+        <Item xsi:type="DesignerProjectItemMetadata" ItemName="ScreenObjects" ScreenName="Manual_Adjustments" TemplateScreen="Background">
+          <Details>
+            <Detail>
+              <Key>Button</Key>
+              <Value>3</Value>
+            </Detail>
+            <Detail>
+              <Key>Slider</Key>
+              <Value>1</Value>
+            </Detail>
+            <Detail>
+              <Key>Label</Key>
+              <Value>2</Value>
+            </Detail>
+          </Details>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="MultipleLanguage">
+      <Items />
+    </Category>
+    <Category Name="Object">
+      <Items />
+    </Category>
+    <Category Name="Recipe">
+      <Items />
+    </Category>
+    <Category Name="Renderable">
+      <Items>
+        <Item Target="Manual_Adjustments.Slider" Source="Manual_Adjustments.m_Slider.bmp" />
+      </Items>
+    </Category>
+    <Category Name="Report">
+      <Items />
+    </Category>
+    <Category Name="Screen">
+      <Items>
+        <Item xsi:type="ScreenObjectsCrossReferenceItem">
+          <ObjectsCount>6</ObjectsCount>
+          <ScreenName>Manual_Adjustments</ScreenName>
+        </Item>
+        <Item xsi:type="ScreenIDItem" ScreenID="">
+          <ScreenName>Manual_Adjustments</ScreenName>
+        </Item>
+      </Items>
+    </Category>
+    <Category Name="Script">
+      <Items />
+    </Category>
+    <Category Name="StructuredTag">
+      <Items />
+    </Category>
+    <Category Name="Symbol">
+      <Items />
+    </Category>
+    <Category Name="TextIDs">
+      <Items />
+    </Category>
+    <Category Name="TextLibrary">
+      <Items />
+    </Category>
+    <Category Name="TrendViewer">
+      <Items />
+    </Category>
+    <Category Name="Uri">
+      <Items />
+    </Category>
+    <Category Name="WebBrowserSecurity">
+      <Items />
+    </Category>
+  </Categories>
+</CrossReferences>

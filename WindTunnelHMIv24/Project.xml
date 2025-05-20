@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project SchemaVersion="2.52.81.0" ProjectRevision="213">
+  <Guid>657fdb90-3628-4721-9d83-89e11f492566</Guid>
+  <ProjectFiles>
+    <ProjectFile Name="ProjectImages.neo" ModifiedDate="2025-05-19T10:12:01.4376406-07:00" Length="484" />
+    <ProjectFile Name="Symbols\download (1).png" ModifiedDate="2025-05-19T10:12:02.0656931-07:00" Length="1733" />
+    <ProjectFile Name="Symbols\download.png" ModifiedDate="2025-05-19T10:12:02.0776929-07:00" Length="2072" />
+    <ProjectFile Name="Symbols\download__1_-removebg-preview.png" ModifiedDate="2025-05-19T10:12:02.0892005-07:00" Length="10513" />
+    <ProjectFile Name="Symbols\nolecalogo.png" ModifiedDate="2025-05-19T10:12:02.143735-07:00" Length="13906" />
+    <ProjectFile Name="Symbols\folder.gif" ModifiedDate="2025-05-19T10:12:02.1122073-07:00" Length="4812" />
+    <ProjectFile Name="Symbols\trend.gif" ModifiedDate="2025-05-19T10:12:02.183735-07:00" Length="6213" />
+    <ProjectFile Name="Symbols\emergency.lib" ModifiedDate="2025-05-19T10:12:02.0962073-07:00" Length="25032" />
+    <ProjectFile Name="Symbols\gears.lib" ModifiedDate="2025-05-19T10:12:02.1241993-07:00" Length="39870" />
+    <ProjectFile Name="Symbols\home.lib" ModifiedDate="2025-05-19T10:12:02.131735-07:00" Length="20595" />
+    <ProjectFile Name="Symbols\padlock.lib" ModifiedDate="2025-05-19T10:12:02.1507352-07:00" Length="15825" />
+    <ProjectFile Name="Symbols\player pause.lib" ModifiedDate="2025-05-19T10:12:02.1577351-07:00" Length="11310" />
+    <ProjectFile Name="Symbols\player play.lib" ModifiedDate="2025-05-19T10:12:02.164728-07:00" Length="12084" />
+    <ProjectFile Name="Symbols\sd card.lib" ModifiedDate="2025-05-19T10:12:02.1717352-07:00" Length="21304" />
+    <ProjectFile Name="Symbols\usb.lib" ModifiedDate="2025-05-19T10:12:02.1922445-07:00" Length="17192" />
+    <ProjectFile Name="Symbols\zoom in.lib" ModifiedDate="2025-05-19T10:12:02.1992444-07:00" Length="32746" />
+    <ProjectFile Name="SntpClientRootComponent.neo" ModifiedDate="2025-05-19T10:12:01.7065344-07:00" Length="545" />
+    <ProjectFile Name="ProjectConfiguration.neo" ModifiedDate="2025-05-19T10:12:01.4016491-07:00" Length="7907" />
+    <ProjectFile Name="Security.neo" ModifiedDate="2025-05-19T10:12:01.5421975-07:00" Length="607" />
+    <ProjectFile Name="Security.xml" ModifiedDate="2025-05-19T10:12:01.5601973-07:00" Length="1004" />
+    <ProjectFile Name="Expressions.neo" ModifiedDate="2025-05-19T10:12:01.1085268-07:00" Length="487" />
+    <ProjectFile Name="MultipleLanguages.neo" ModifiedDate="2025-05-19T10:12:01.3301304-07:00" Length="47551" />
+    <ProjectFile Name="LicenseRootComponent.neo" ModifiedDate="2025-05-19T10:12:01.1620571-07:00" Length="13428" />
+    <ProjectFile Name="Tags.neo" ModifiedDate="2025-05-19T10:42:08.9847805-07:00" Length="50695" />
+    <ProjectFile Name="AlarmServer.neo" ModifiedDate="2025-05-19T10:12:00.2894028-07:00" Length="1083" />
+    <ProjectFile Name="Manual_Adjustments.neoxaml" ModifiedDate="2025-05-19T10:12:01.2005646-07:00" Length="837" />
+    <ProjectFile Name="Manual_Adjustments.Script.cs" ModifiedDate="2025-05-19T10:12:01.2790999-07:00" Length="1075" />
+    <ProjectFile Name="Manual_Adjustments.xaml" ModifiedDate="2025-05-19T10:12:01.296609-07:00" Length="12995" />
+    <ProjectFile Name="Start_Up_screen.neoxaml" ModifiedDate="2025-05-19T10:12:01.7400423-07:00" Length="834" />
+    <ProjectFile Name="Start_Up_screen.xaml" ModifiedDate="2025-05-19T10:12:01.8381174-07:00" Length="5914" />
+    <ProjectFile Name="Data_Live_Viewer.neoxaml" ModifiedDate="2025-05-19T10:12:00.8493522-07:00" Length="835" />
+    <ProjectFile Name="Data_Live_Viewer.Script.cs" ModifiedDate="2025-05-19T10:12:00.9238693-07:00" Length="791" />
+    <ProjectFile Name="Data_Live_Viewer.xaml" ModifiedDate="2025-05-19T10:12:00.9456525-07:00" Length="30484" />
+    <ProjectFile Name="Background.neoxaml" ModifiedDate="2025-05-19T10:12:00.3593959-07:00" Length="829" />
+    <ProjectFile Name="Background.xaml" ModifiedDate="2025-05-19T10:12:00.4574332-07:00" Length="17269" />
+    <ProjectFile Name="Settings.neoxaml" ModifiedDate="2025-05-19T10:42:27.4906635-07:00" Length="827" />
+    <ProjectFile Name="Settings.xaml" ModifiedDate="2025-05-19T10:42:27.5558966-07:00" Length="27912" />
+    <ProjectFile Name="Data_History.neoxaml" ModifiedDate="2025-05-19T10:12:00.7404056-07:00" Length="831" />
+    <ProjectFile Name="Data_History.xaml" ModifiedDate="2025-05-19T10:12:00.8168317-07:00" Length="4173" />
+    <ProjectFile Name="emergency_popup.neoxaml" ModifiedDate="2025-05-19T10:12:00.996228-07:00" Length="834" />
+    <ProjectFile Name="emergency_popup.xaml" ModifiedDate="2025-05-19T10:12:01.0740003-07:00" Length="5686" />
+    <ProjectFile Name="DataBase_Settings.neoxaml" ModifiedDate="2025-05-19T10:15:49.9022849-07:00" Length="836" />
+    <ProjectFile Name="DataBase_Settings.xaml" ModifiedDate="2025-05-19T10:15:49.9196447-07:00" Length="13547" />
+    <ProjectFile Name="Printer1.xml" ModifiedDate="2025-05-19T10:12:01.3491304-07:00" Length="850" />
+    <ProjectFile Name="Controller1.neo" ModifiedDate="2025-05-19T10:42:09.0498737-07:00" Length="7516" />
+    <ProjectFile Name="WindTunnelData.neo" ModifiedDate="2025-05-19T10:12:01.961132-07:00" Length="11131" />
+    <ProjectFile Name="WindTunnelData.Script.cs" ModifiedDate="2025-05-19T10:12:01.9771388-07:00" Length="789" />
+    <ProjectFile Name="SCM_USB_SD_Check.neo" ModifiedDate="2025-05-19T10:12:01.4711913-07:00" Length="617" />
+    <ProjectFile Name="SCM_USB_SD_Check.Script.cs" ModifiedDate="2025-05-19T10:12:01.4876641-07:00" Length="3126" />
+  </ProjectFiles>
+</Project>

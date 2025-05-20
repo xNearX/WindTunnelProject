@@ -1,0 +1,12 @@
+/******************************************************************************
+ * Name: PressureSensor
+ * Description: Pressure Sensor Calculation
+ *
+ * Arguments: none
+ * Return: None
+ * 
+ * Author: Leland Dean, Carolyn Richards, Noah Gastelum
+ * Date: Feb 21, 2025
+ * Modified Data: N/A
+ *****************************************************************************/
+HMI_Pressure [:=] InputPressureSensor / MILLIVOLTSTOVOLTS * PRESSUREGAIN;
